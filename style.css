@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+*, html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 109vh;
+    overflow-x: hidden;
+}
+.landing {
+    background-image:url(media/bg.webp);
+    background-attachment: fixed;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 109vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+.landing img{
+    width: 300px;
+}
+.form{
+    /* background-color: black !important; */
+    z-index: 1 !important;
+    height: 30vh;
+    margin-top: 15vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form iframe{
+    transform: scale(0.75) !important;
+    margin-top: 0vh;
+}
+.dsRow {
+    background-color: rgb(255, 255, 255);
+    height: 9vh;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.dsRow img{
+    width: 45px;
+}
+.dsRow a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.dsfist{
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+#cid_1{
+    margin: 0 !important;
+}
+
+
+@media screen and (max-width: 800px) {
+    .landing img{
+        width: 225px;
+    }
+    .landing {
+        background-image:url(media/bg.webp);
+        background-attachment: fixed;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: 350%;
+        background-position: center;
+        height: 109vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+    }
+    .form{height: 33vh;}
+    .form iframe{
+        transform: scale(1) !important;
+        margin-top: 0vh;
+    }
+
+    .dsRow{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+    }
+    .dsRow div:nth-child(2){
+        margin-top: 2vh;
+    }
+    .dsRow div:nth-child(3){
+        display: none;
+    }
+}
