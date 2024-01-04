@@ -3,6 +3,33 @@
     margin: 0;
     padding: 0;
 }
+/* ScrollBar_____________________________ */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #202020;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #000000;
+  }
+
+  .form iframe::-webkit-scrollbar {
+    width: 1px !important;
+  }
+
+  .form::-webkit-scrollbar-thumb {
+    background-color: #a51a1a;
+    border-radius: 6px;
+  }
+
+  .form iframe::-webkit-scrollbar-track {
+    background-color: #950f0f !important;
+  }
+  /* ______________________________________________ */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -11,13 +38,13 @@ body{
     overflow-x: hidden;
 }
 .landing {
-    background-image:url(media/bg.webp);
+    background-image:url(media/CollageBackgroundMXD.webp);
     background-attachment: fixed;
     background-color: black;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    height: 109vh;
+    background-size: 110%;
+    background-position: 50% 0%;
+    height: 140vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,29 +57,30 @@ body{
 .form{
     /* background-color: black !important; */
     z-index: 1 !important;
-    height: 30vh;
-    margin-top: 15vh;
-    width: 100vw;
-    overflow: hidden;
+    height: 110vh;
+    margin-top: 20vh;
+    overflow: hidden !important;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    scrollbar-color: #721818 #e71212;
+      scrollbar-width: thin;
 }
 .form iframe{
-    transform: scale(0.75) !important;
-    margin-top: 0vh;
-}
+    height: 115vh;
+  }
 .dsRow {
     background-color: rgb(255, 255, 255);
     height: 9vh;
     padding: 0 40px;
+    padding-top: 3px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 .dsRow img{
-    width: 45px;
+    width: 60px;
 }
 .dsRow a{
     text-decoration: none;
@@ -69,27 +97,29 @@ body{
 
 
 @media screen and (max-width: 800px) {
-    .landing img{
-        width: 225px;
-    }
+
     .landing {
-        background-image:url(media/bg.webp);
+        background-image:url(media/CollageBackgroundMXD.webp);
         background-attachment: fixed;
-        background-color: black;
-        background-repeat: no-repeat;
-        background-size: 390%;
-        background-position: center;
-        height: 109vh;
+        background-repeat: repeat;
+        background-size: 200%;
+        background-position: 50% 0%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 9;
+        z-index: 1;
     }
-    .form{height: 33vh;border-radius:15px;}
+    .form{
+        width: 94vw;
+        height: 103vh;
+        overflow: scroll;
+        margin-bottom: 8vh;
+        margin-top: 15vh;
+    }
     .form iframe{
-        border-radius:15px;
-        transform: scale(1) !important;
+        height: 110vh;
         margin-top: 0vh;
     }
 
