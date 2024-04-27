@@ -38,13 +38,13 @@ body{
     overflow-x: hidden;
 }
 .landing {
-    background-image:url(media/CollageBackgroundMXD.webp);
+    /* background-image:url(media/CollageBackgroundMXD.webp); */
     background-attachment: fixed;
     background-color: black;
     background-repeat: no-repeat;
     background-size: 110%;
     background-position: 50% 0%;
-    height: 140vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +52,7 @@ body{
     z-index: 9;
 }
 .landing img{
-    width: 300px;
+    width: 140px;
 }
 .form{
     /* background-color: black !important; */
@@ -99,12 +99,12 @@ body{
 @media screen and (max-width: 800px) {
 
     .landing {
-        background-image:url(media/CollageBackgroundMXD.webp);
+        /* background-image:url(media/CollageBackgroundMXD.webp); */
         background-attachment: fixed;
         background-repeat: repeat;
         background-size: 200%;
         background-position: 50% 0%;
-        height: auto;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -116,7 +116,7 @@ body{
         height: 103vh;
         overflow: scroll;
         margin-bottom: 8vh;
-        margin-top: 15vh;
+        margin-top: 10vh;
     }
     .form iframe{
         height: 110vh;
@@ -124,13 +124,12 @@ body{
     }
 
     .dsRow{
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 15vh;
+        height: 10vh;
     }
     .dsRow div:nth-child(2){
-        margin-top: 2vh;
+        margin-top: 0vh;
     }
     .dsRow div:nth-child(3){
         display: none;
