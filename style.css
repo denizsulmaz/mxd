@@ -96,7 +96,7 @@ body{
 }
 .cruxBtn{
     position: absolute;
-    top: 80vh;
+    top: 75vh;
     left: calc(50% - 140px);
     font-size: 18px;
     text-decoration: none;
