@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MXD Culture | Stay Tuned!</title>
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+         /* ______________________________________________ */
+        body{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: black;
+        }
+        nav {
+            background-attachment: fixed;
+            background-color: black;
+            background-repeat: no-repeat;
+            padding-top: 30px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9;
+        }
+        nav img{
+            height: 120px;
+        }
+        .form{
+            /* background-color: black !important; */
+            z-index: 1 !important;
+            height: 150vh;
+            margin: 0;
+            padding: 3vh 0 10vh 0;
+            overflow: hidden !important;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            scrollbar-color: #721818 #e71212;
+              scrollbar-width: thin;
+        }
+        .form iframe{
+            height: 150vh;
+          }
+        .headline h1{
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+        .headline h3{
+            color: rgba(255, 255, 255, 0.802);
+            font-weight: 400;
+            text-align: center;
+            font-size: 20px;
+        }
+        .dsRow {
+            background-color: rgb(255, 255, 255);
+            height: 9vh;
+            padding: 0 40px;
+            padding-top: 3px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dsRow img{
+            width: 60px;
+        }
+        .dsRow a{
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+        .dsfist{
+            font-size: 12px;
+            letter-spacing: 0px;
+        }
+        #cid_1{
+            margin: 0 !important;
+        }
+
+
+        @media screen and (max-width: 800px) {
+
+            .form{
+                width: 94vw;
+                height: 140vh;
+                overflow: scroll;
+                margin: 1vh 3vw -8vh 3vw;
+            }
+            .form iframe{
+                height: 140vh;
+                margin-top: 0vh;
+            }
+            .dsRow{
+                justify-content: center;
+                align-items: center;
+                height: 10vh;
+            }
+            .dsRow div:nth-child(2){
+                margin-top: 0vh;
+            }
+            .dsRow div:nth-child(3){
+                display: none;
+            }
+            .headline h1{
+            color: white;
+            text-align: center;
+            font-size: 35px;
+            }
+            .headline h3{
+            color: rgba(255, 255, 255, 0.802);
+            font-weight: 400;
+            text-align: center;
+            font-size: 18px;
+            line-height: 190%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="media/mxdicon.png" alt="MXD Culture"> 
+    </nav>
+
+    <div class="headline">
+    <h3>MXD Culture Presents:</h3>
+    <h1>CRUX Camp Project</h1>
+    </div>
+    
+    <div class="form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSee0y3OMdMqTdRk86KzIAy764gbfunmf_rMtz7NomMyEL90pQ/viewform?embedded=true&hl=en" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+
+    <footer>
+        <div class="dsRow">
+            <div>
+                <p>© 2024 MXD Culture™ </p>
+            </div>
+            <div>
+                <a href="https://dsfist.com" target="_blank" rel="noopener noreferrer">
+                    <!-- <img src="media/SUFC.webp" alt="DSFIST Enterprises"> -->
+                </a>
+            </div>
+            <div class="dsfist"> 
+                <p>Assoc. Member of <a href="https://dsfist.com" target="_blank" rel="noopener noreferrer"> DSFIST Collective</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
